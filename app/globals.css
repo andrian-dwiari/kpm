@@ -40,7 +40,12 @@ body {
   color: #f5f7fa;
 }
 
-/* Reveal-on-scroll */
+/* Reveal-on-scroll
+   IMPORTANT: content is visible by DEFAULT (fail-safe). The hidden state is
+   only applied once JS has confirmed it's running (via the "reveal" class
+   added in an effect) and Reveal.tsx will always resolve it back to visible
+   shortly after via IntersectionObserver. This prevents content from being
+   permanently invisible if JS fails to load/execute for any reason. */
 .reveal {
   opacity: 0;
   transform: translateY(18px);

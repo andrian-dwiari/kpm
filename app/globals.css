@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "DM Serif Display", serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+html,
+body {
+  background-color: #f7f5f0;
+  color: #272723;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(39, 39, 35, 0.035) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+::selection {
+  background-color: #7c8468;
+  color: #f7f5f0;
+}
+
+/* Reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+}
+
+.reveal-visible {
+  animation: fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Focus states — visible & consistent */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #7c8468;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Thin decorative divider */
+.hr-thin {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e5e1d8, transparent);
+}
+
+/* Eyebrow label */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7c8468;
+}
+
+/* Custom scrollbar for gallery strip */
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scroll-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

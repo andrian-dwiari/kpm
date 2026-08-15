@@ -51,19 +51,19 @@ export default function HomeMotif({ className, variant = "hero" }: HomeMotifProp
       aria-label="Ilustrasi tampak depan rumah kontrakan bergaya garis, dengan atap pelana, pintu kayu, dua jendela, dan tanaman kecil di teras."
     >
       {/* Ground line */}
-      <line x1="60" y1="440" x2="580" y2="440" stroke="#E5E1D8" strokeWidth="2" />
+      <line x1="60" y1="440" x2="580" y2="440" stroke="#DFE6ED" strokeWidth="2" />
 
       {/* Roof */}
       <path
         d="M100 220 L320 90 L540 220"
-        stroke="#596047"
+        stroke="#1D3D57"
         strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M130 220 L320 108 L510 220"
-        stroke="#7C8468"
+        stroke="#2F5C82"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -73,15 +73,15 @@ export default function HomeMotif({ className, variant = "hero" }: HomeMotifProp
       {/* House body */}
       <path
         d="M150 216 V440 H490 V216"
-        stroke="#272723"
+        stroke="#1C2733"
         strokeWidth="3"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
 
       {/* Facade texture lines */}
-      <line x1="150" y1="300" x2="490" y2="300" stroke="#E5E1D8" strokeWidth="1.5" />
-      <line x1="150" y1="370" x2="490" y2="370" stroke="#E5E1D8" strokeWidth="1.5" />
+      <line x1="150" y1="300" x2="490" y2="300" stroke="#DFE6ED" strokeWidth="1.5" />
+      <line x1="150" y1="370" x2="490" y2="370" stroke="#DFE6ED" strokeWidth="1.5" />
 
       {/* Door */}
       <path
@@ -100,11 +100,11 @@ export default function HomeMotif({ className, variant = "hero" }: HomeMotifProp
         width="64"
         height="64"
         rx="4"
-        stroke="#272723"
+        stroke="#1C2733"
         strokeWidth="2.5"
       />
-      <line x1="220" y1="248" x2="220" y2="312" stroke="#272723" strokeWidth="1.5" />
-      <line x1="188" y1="280" x2="252" y2="280" stroke="#272723" strokeWidth="1.5" />
+      <line x1="220" y1="248" x2="220" y2="312" stroke="#1C2733" strokeWidth="1.5" />
+      <line x1="188" y1="280" x2="252" y2="280" stroke="#1C2733" strokeWidth="1.5" />
 
       {/* Right window */}
       <rect
@@ -113,27 +113,27 @@ export default function HomeMotif({ className, variant = "hero" }: HomeMotifProp
         width="64"
         height="64"
         rx="4"
-        stroke="#272723"
+        stroke="#1C2733"
         strokeWidth="2.5"
       />
-      <line x1="420" y1="248" x2="420" y2="312" stroke="#272723" strokeWidth="1.5" />
-      <line x1="388" y1="280" x2="452" y2="280" stroke="#272723" strokeWidth="1.5" />
+      <line x1="420" y1="248" x2="420" y2="312" stroke="#1C2733" strokeWidth="1.5" />
+      <line x1="388" y1="280" x2="452" y2="280" stroke="#1C2733" strokeWidth="1.5" />
 
       {/* Small plant beside the door */}
       <path
         d="M242 440 V404"
-        stroke="#7C8468"
+        stroke="#2F5C82"
         strokeWidth="2.5"
         strokeLinecap="round"
       />
       <path
         d="M242 404 C230 400 224 388 226 376 C240 380 248 392 242 404Z"
-        fill="#7C8468"
+        fill="#2F5C82"
         opacity="0.85"
       />
       <path
         d="M242 410 C254 406 260 394 258 382 C244 386 236 398 242 410Z"
-        fill="#96A17C"
+        fill="#4A7DA3"
         opacity="0.85"
       />
       <rect x="230" y="440" width="24" height="14" rx="2" stroke="#B08968" strokeWidth="2" />
@@ -141,7 +141,7 @@ export default function HomeMotif({ className, variant = "hero" }: HomeMotifProp
       {/* Path to the door */}
       <path
         d="M320 440 V470"
-        stroke="#E5E1D8"
+        stroke="#DFE6ED"
         strokeWidth="10"
         strokeLinecap="round"
       />

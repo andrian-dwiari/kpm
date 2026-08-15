@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title-about desc-about">
+  <title id="title-about">Ilustrasi suasana Kontrakan Pak Mukhadin</title>
+  <desc id="desc-about">Placeholder — ganti file ini di public/images/about-kontrakan.svg dengan foto asli suasana kontrakan.</desc>
+  <rect width="900" height="700" fill="#EAF0F6"/>
+
+  <!-- window frame looking outward -->
+  <rect x="120" y="110" width="660" height="480" rx="10" fill="#F5F7FA" stroke="#1C2733" stroke-width="3"/>
+  <line x1="450" y1="110" x2="450" y2="590" stroke="#1C2733" stroke-width="2.5"/>
+  <line x1="120" y1="350" x2="780" y2="350" stroke="#1C2733" stroke-width="2.5"/>
+
+  <!-- left pane: simple house silhouette -->
+  <g>
+    <path d="M190 300 L280 230 L370 300" stroke="#1D3D57" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="210" y="300" width="140" height="115" fill="#FFFFFF" stroke="#2F5C82" stroke-width="2.5"/>
+    <rect x="255" y="345" width="50" height="70" fill="none" stroke="#B08968" stroke-width="3"/>
+  </g>
+
+  <!-- right pane: warm light circle -->
+  <g>
+    <circle cx="615" cy="260" r="58" fill="#2F5C82" opacity="0.12"/>
+    <circle cx="615" cy="260" r="30" fill="#2F5C82" opacity="0.35"/>
+  </g>
+
+  <!-- bottom-left pane: plant -->
+  <g>
+    <path d="M235 560 V500" stroke="#2F5C82" stroke-width="3" stroke-linecap="round"/>
+    <path d="M235 500 C217 494 207 476 211 458 C233 464 245 482 235 500Z" fill="#2F5C82" opacity="0.85"/>
+    <path d="M235 508 C253 502 263 484 259 466 C237 472 225 490 235 508Z" fill="#4A7DA3" opacity="0.85"/>
+  </g>
+
+  <!-- bottom-right pane: door detail -->
+  <g>
+    <path d="M560 560 V470 Q560 452 580 452 H620 Q640 452 640 470 V560" fill="none" stroke="#1C2733" stroke-width="3.5"/>
+    <circle cx="612" cy="508" r="3" fill="#B08968"/>
+  </g>
+</svg>

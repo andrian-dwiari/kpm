@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t2 d2">
+  <title id="t2">Area utama — placeholder</title>
+  <desc id="d2">Ganti file ini dengan foto asli ruang/area utama unit.</desc>
+  <rect width="800" height="600" fill="#F5F7FA"/>
+  <rect x="0" y="430" width="800" height="170" fill="#EAF0F6"/>
+  <!-- window -->
+  <rect x="560" y="90" width="180" height="220" fill="#EAF0F6" stroke="#1C2733" stroke-width="2.5"/>
+  <line x1="650" y1="90" x2="650" y2="310" stroke="#1C2733" stroke-width="1.5"/>
+  <line x1="560" y1="200" x2="740" y2="200" stroke="#1C2733" stroke-width="1.5"/>
+  <!-- sofa -->
+  <rect x="80" y="330" width="300" height="110" rx="14" fill="#FFFFFF" stroke="#2F5C82" stroke-width="3"/>
+  <rect x="80" y="300" width="300" height="50" rx="14" fill="#FFFFFF" stroke="#2F5C82" stroke-width="3"/>
+  <rect x="60" y="330" width="40" height="90" rx="10" fill="#FFFFFF" stroke="#2F5C82" stroke-width="3"/>
+  <rect x="360" y="330" width="40" height="90" rx="10" fill="#FFFFFF" stroke="#2F5C82" stroke-width="3"/>
+  <!-- cushions -->
+  <rect x="120" y="336" width="60" height="46" rx="8" fill="#2F5C82" opacity="0.18"/>
+  <rect x="220" y="336" width="60" height="46" rx="8" fill="#B08968" opacity="0.28"/>
+  <!-- coffee table -->
+  <rect x="430" y="420" width="150" height="14" rx="4" fill="#1C2733" opacity="0.7"/>
+  <line x1="450" y1="434" x2="450" y2="470" stroke="#1C2733" stroke-width="4" opacity="0.7"/>
+  <line x1="560" y1="434" x2="560" y2="470" stroke="#1C2733" stroke-width="4" opacity="0.7"/>
+  <!-- rug -->
+  <ellipse cx="330" cy="470" rx="220" ry="26" fill="#2F5C82" opacity="0.08"/>
+</svg>

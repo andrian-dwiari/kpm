@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t1 d1">
+  <title id="t1">Tampak depan — placeholder</title>
+  <desc id="d1">Ganti file ini dengan foto asli tampak depan unit.</desc>
+  <rect width="800" height="600" fill="#EAF0F6"/>
+  <rect x="0" y="470" width="800" height="130" fill="#DFE6ED"/>
+  <path d="M120 260 L400 120 L680 260" stroke="#1D3D57" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="170" y="256" width="460" height="214" fill="#FFFFFF" stroke="#1C2733" stroke-width="3"/>
+  <path d="M350 470 V360 Q350 340 372 340 H428 Q450 340 450 360 V470" fill="none" stroke="#B08968" stroke-width="4"/>
+  <rect x="212" y="300" width="80" height="80" fill="#EAF0F6" stroke="#1C2733" stroke-width="2.5"/>
+  <line x1="252" y1="300" x2="252" y2="380" stroke="#1C2733" stroke-width="1.5"/>
+  <line x1="212" y1="340" x2="292" y2="340" stroke="#1C2733" stroke-width="1.5"/>
+  <rect x="508" y="300" width="80" height="80" fill="#EAF0F6" stroke="#1C2733" stroke-width="2.5"/>
+  <line x1="548" y1="300" x2="548" y2="380" stroke="#1C2733" stroke-width="1.5"/>
+  <line x1="508" y1="340" x2="588" y2="340" stroke="#1C2733" stroke-width="1.5"/>
+</svg>

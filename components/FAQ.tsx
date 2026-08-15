@@ -7,7 +7,7 @@ export default function FAQ() {
     <section id="faq" className="py-20 sm:py-28">
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <Reveal>
-          <p className="eyebrow">Pertanyaan Umum</p>
+          <p className="eyebrow text-accent">Pertanyaan Umum</p>
           <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight text-ink sm:text-4xl">
             Yang Sering Ditanyakan
           </h2>

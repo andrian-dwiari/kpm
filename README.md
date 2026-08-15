@@ -27,17 +27,29 @@ lib/            → data konten (lib/data.ts) & konstanta bisnis (lib/site.ts)
 public/         → aset statis (favicon)
 ```
 
-## Mengganti foto unit dengan foto asli
+## Mengganti gambar dengan foto asli
 
-Galeri (`components/PropertyGallery.tsx`) saat ini menggunakan visual placeholder
-elegan berbasis ikon, bukan foto asli. Untuk memasukkan foto sungguhan:
+Semua visual di website ini masih berupa **placeholder ilustrasi** (file `.svg`) yang tersimpan di:
 
-1. Simpan foto ke `public/images/` (misalnya `fasad.jpg`, `ruang-utama.jpg`, dst).
-2. Di `components/PropertyGallery.tsx`, ganti komponen `<PlaceholderVisual />`
-   dengan `next/image` yang menunjuk ke file tersebut — gunakan `id` dari
-   `lib/data.ts` (`galleryItems`) untuk memetakan setiap foto ke kartu yang sesuai.
-3. Ilustrasi rumah pada Hero dan About (`components/HomeMotif.tsx`) juga bisa
-   diganti dengan foto asli tampak depan kontrakan bila diinginkan.
+```
+public/images/hero-kontrakan.svg      → visual besar di Hero
+public/images/about-kontrakan.svg     → visual di section Tentang
+public/images/gallery/fasad.svg       → galeri: tampak depan
+public/images/gallery/ruang-utama.svg → galeri: area utama
+public/images/gallery/kamar.svg       → galeri: ruang kamar
+public/images/gallery/akses.svg       → galeri: akses & jalan masuk
+public/images/gallery/lingkungan.svg  → galeri: lingkungan sekitar
+```
+
+Untuk mengganti dengan foto asli, **cukup timpa (replace) file-file di atas** dengan
+foto asli — gunakan nama file yang sama (boleh `.jpg`/`.png`, tinggal sesuaikan
+ekstensi di `lib/data.ts` untuk galeri dan di `components/Hero.tsx` /
+`components/AboutSection.tsx` untuk visual Hero & Tentang). Tidak perlu
+mengubah struktur komponen lainnya.
+
+Ilustrasi rumah kecil (brand mark) di Navbar & Footer (`components/HomeMotif.tsx`)
+sengaja dibiarkan sebagai ikon vektor, bukan foto — ini adalah logo mark, bukan
+galeri foto unit.
 
 ## Mengubah informasi bisnis
 

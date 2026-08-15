@@ -96,9 +96,9 @@ export const faqs = [
 ] as const;
 
 export const galleryItems = [
-  { id: "fasad", label: "Tampak Depan" },
-  { id: "ruang-utama", label: "Area Utama" },
-  { id: "kamar", label: "Ruang Kamar" },
-  { id: "akses", label: "Akses & Jalan Masuk" },
-  { id: "lingkungan", label: "Lingkungan Sekitar" },
+  { id: "fasad", label: "Tampak Depan", src: "/images/gallery/fasad.svg" },
+  { id: "ruang-utama", label: "Area Utama", src: "/images/gallery/ruang-utama.svg" },
+  { id: "kamar", label: "Ruang Kamar", src: "/images/gallery/kamar.svg" },
+  { id: "akses", label: "Akses & Jalan Masuk", src: "/images/gallery/akses.svg" },
+  { id: "lingkungan", label: "Lingkungan Sekitar", src: "/images/gallery/lingkungan.svg" },
 ] as const;

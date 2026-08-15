@@ -1,6 +1,6 @@
 import { MapPin, MessageCircle } from "lucide-react";
+import Image from "next/image";
 import Button from "./Button";
-import HomeMotif from "./HomeMotif";
 import { buildWhatsappUrl, whatsappMessages } from "@/lib/site";
 
 export default function Hero() {
@@ -21,7 +21,7 @@ export default function Hero() {
 
       <div className="mx-auto grid max-w-content gap-14 px-5 sm:px-8 lg:grid-cols-2 lg:items-center lg:gap-10">
         <div>
-          <p className="eyebrow">Hunian Nyaman di Ciputat</p>
+          <p className="eyebrow text-accent">Hunian Nyaman di Ciputat</p>
 
           <h1 className="mt-5 max-w-xl font-serif text-[2.5rem] leading-[1.15] text-ink sm:text-5xl lg:text-[3.4rem]">
             Tempat Tinggal Nyaman untuk Memulai Hari dengan Tenang.
@@ -64,9 +64,19 @@ export default function Hero() {
         </div>
 
         <div className="relative">
-          <div className="relative mx-auto max-w-md rounded-xl2 border border-border bg-white p-8 shadow-card sm:p-10">
-            <HomeMotif className="w-full text-accent" />
-            <div className="mt-6 flex items-center justify-between border-t border-border pt-5">
+          <div className="relative mx-auto max-w-md overflow-hidden rounded-xl2 border border-border bg-sand shadow-card">
+            <div className="relative aspect-[4/3]">
+              <Image
+                src="/images/hero-kontrakan.svg"
+                alt="Tampak depan Kontrakan Pak Mukhadin"
+                fill
+                unoptimized
+                priority
+                sizes="(min-width: 1024px) 480px, 90vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="flex items-center justify-between bg-white p-6 sm:p-7">
               <div>
                 <p className="font-serif text-lg text-ink">
                   Kontrakan Pak Mukhadin

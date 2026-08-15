@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="title-hero desc-hero">
+  <title id="title-hero">Ilustrasi tampak depan Kontrakan Pak Mukhadin</title>
+  <desc id="desc-hero">Placeholder — ganti file ini di public/images/hero-kontrakan.svg dengan foto asli tampak depan kontrakan.</desc>
+  <defs>
+    <linearGradient id="skyHero" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EAF0F6"/>
+      <stop offset="100%" stop-color="#F5F7FA"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" rx="0" fill="url(#skyHero)"/>
+
+  <!-- ground -->
+  <rect x="0" y="560" width="900" height="140" fill="#DFE6ED"/>
+  <line x1="60" y1="560" x2="840" y2="560" stroke="#C9D5E0" stroke-width="2"/>
+
+  <!-- roof -->
+  <path d="M140 300 L450 130 L760 300" stroke="#1D3D57" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M180 300 L450 156 L720 300" stroke="#2F5C82" stroke-width="2.5" stroke-linejoin="round" fill="none" opacity="0.55"/>
+
+  <!-- body -->
+  <rect x="190" y="296" width="520" height="264" fill="#FFFFFF" stroke="#1C2733" stroke-width="3"/>
+  <line x1="190" y1="400" x2="710" y2="400" stroke="#DFE6ED" stroke-width="1.5"/>
+  <line x1="190" y1="480" x2="710" y2="480" stroke="#DFE6ED" stroke-width="1.5"/>
+
+  <!-- door -->
+  <path d="M400 560 V420 Q400 396 428 396 H472 Q500 396 500 420 V560" fill="none" stroke="#B08968" stroke-width="4"/>
+  <circle cx="480" cy="486" r="3.5" fill="#B08968"/>
+
+  <!-- windows -->
+  <rect x="238" y="336" width="90" height="90" rx="4" fill="#EAF0F6" stroke="#1C2733" stroke-width="2.5"/>
+  <line x1="283" y1="336" x2="283" y2="426" stroke="#1C2733" stroke-width="1.5"/>
+  <line x1="238" y1="381" x2="328" y2="381" stroke="#1C2733" stroke-width="1.5"/>
+
+  <rect x="572" y="336" width="90" height="90" rx="4" fill="#EAF0F6" stroke="#1C2733" stroke-width="2.5"/>
+  <line x1="617" y1="336" x2="617" y2="426" stroke="#1C2733" stroke-width="1.5"/>
+  <line x1="572" y1="381" x2="662" y2="381" stroke="#1C2733" stroke-width="1.5"/>
+
+  <!-- plant -->
+  <path d="M356 560 V500" stroke="#2F5C82" stroke-width="3" stroke-linecap="round"/>
+  <path d="M356 500 C338 494 328 476 332 458 C354 464 366 482 356 500Z" fill="#2F5C82" opacity="0.85"/>
+  <path d="M356 508 C374 502 384 484 380 466 C358 472 346 490 356 508Z" fill="#4A7DA3" opacity="0.85"/>
+  <rect x="338" y="560" width="36" height="20" rx="2" fill="#FFFFFF" stroke="#B08968" stroke-width="2.5"/>
+
+  <!-- path -->
+  <path d="M450 560 V620" stroke="#C9D5E0" stroke-width="16" stroke-linecap="round"/>
+</svg>

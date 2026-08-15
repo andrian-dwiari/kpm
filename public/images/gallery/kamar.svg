@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t3 d3">
+  <title id="t3">Ruang kamar — placeholder</title>
+  <desc id="d3">Ganti file ini dengan foto asli kamar unit.</desc>
+  <rect width="800" height="600" fill="#EAF0F6"/>
+  <rect x="0" y="440" width="800" height="160" fill="#DFE6ED"/>
+  <!-- window -->
+  <rect x="600" y="80" width="140" height="180" fill="#F5F7FA" stroke="#1C2733" stroke-width="2.5"/>
+  <line x1="670" y1="80" x2="670" y2="260" stroke="#1C2733" stroke-width="1.5"/>
+  <line x1="600" y1="170" x2="740" y2="170" stroke="#1C2733" stroke-width="1.5"/>
+  <!-- bed -->
+  <rect x="90" y="300" width="380" height="150" rx="10" fill="#FFFFFF" stroke="#2F5C82" stroke-width="3"/>
+  <rect x="90" y="300" width="380" height="46" rx="10" fill="#2F5C82" opacity="0.14"/>
+  <rect x="110" y="270" width="90" height="60" rx="10" fill="#FFFFFF" stroke="#1C2733" stroke-width="2.5"/>
+  <rect x="215" y="270" width="90" height="60" rx="10" fill="#FFFFFF" stroke="#1C2733" stroke-width="2.5"/>
+  <!-- headboard -->
+  <rect x="80" y="255" width="400" height="20" rx="6" fill="#1D3D57"/>
+  <!-- nightstand + lamp -->
+  <rect x="500" y="380" width="70" height="70" fill="#FFFFFF" stroke="#B08968" stroke-width="2.5"/>
+  <line x1="535" y1="380" x2="535" y2="340" stroke="#B08968" stroke-width="3"/>
+  <ellipse cx="535" cy="326" rx="24" ry="14" fill="#B08968" opacity="0.5"/>
+</svg>

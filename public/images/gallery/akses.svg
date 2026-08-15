@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t4 d4">
+  <title id="t4">Akses dan jalan masuk — placeholder</title>
+  <desc id="d4">Ganti file ini dengan foto asli akses/jalan masuk menuju unit.</desc>
+  <rect width="800" height="600" fill="#F5F7FA"/>
+  <rect x="0" y="0" width="800" height="330" fill="#EAF0F6"/>
+  <!-- road -->
+  <path d="M0 600 L320 330 L480 330 L800 600 Z" fill="#DFE6ED"/>
+  <path d="M400 600 V330" stroke="#FFFFFF" stroke-width="6" stroke-dasharray="18 16"/>
+  <!-- gate posts -->
+  <rect x="250" y="230" width="26" height="140" fill="#1D3D57"/>
+  <rect x="524" y="230" width="26" height="140" fill="#1D3D57"/>
+  <rect x="250" y="220" width="300" height="16" fill="#1D3D57"/>
+  <!-- fence -->
+  <g stroke="#2F5C82" stroke-width="4" opacity="0.6">
+    <line x1="120" y1="290" x2="120" y2="360"/>
+    <line x1="160" y1="280" x2="160" y2="360"/>
+    <line x1="200" y1="270" x2="200" y2="365"/>
+    <line x1="600" y1="270" x2="600" y2="365"/>
+    <line x1="640" y1="280" x2="640" y2="360"/>
+    <line x1="680" y1="290" x2="680" y2="360"/>
+  </g>
+  <!-- house peeking behind -->
+  <path d="M330 210 L400 150 L470 210" stroke="#1C2733" stroke-width="3.5" fill="none" stroke-linejoin="round"/>
+  <rect x="345" y="210" width="110" height="60" fill="#FFFFFF" stroke="#1C2733" stroke-width="2.5"/>
+</svg>

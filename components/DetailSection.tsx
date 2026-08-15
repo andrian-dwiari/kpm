@@ -17,7 +17,7 @@ export default function DetailSection() {
           <div className="rounded-xl2 border border-border bg-sand/50 p-8 sm:p-12">
             <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr] lg:items-center">
               <div>
-                <p className="eyebrow">Detail Hunian</p>
+                <p className="eyebrow text-accent">Detail Hunian</p>
                 <h2 className="mt-4 max-w-lg font-serif text-3xl leading-tight text-ink sm:text-4xl">
                   Butuh Detail Unit? Kami Siap Membantu.
                 </h2>

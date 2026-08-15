@@ -1,37 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { X, ChevronLeft, ChevronRight, DoorOpen, Sofa, BedDouble, Milestone, Trees } from "lucide-react";
+import Image from "next/image";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { galleryItems } from "@/lib/data";
 import Reveal from "./Reveal";
-
-const iconMap = {
-  fasad: DoorOpen,
-  "ruang-utama": Sofa,
-  kamar: BedDouble,
-  akses: Milestone,
-  lingkungan: Trees,
-} as const;
-
-function PlaceholderVisual({ id, label }: { id: string; label: string }) {
-  const Icon = iconMap[id as keyof typeof iconMap] ?? Sofa;
-  return (
-    <div
-      className="relative flex h-full w-full flex-col items-center justify-center gap-3 bg-gradient-to-br from-sand to-ivory"
-      role="img"
-      aria-label={`Placeholder foto — ${label}`}
-    >
-      <div
-        aria-hidden="true"
-        className="absolute inset-4 rounded-xl border border-dashed border-accent/25"
-      />
-      <span className="flex h-14 w-14 items-center justify-center rounded-full bg-white text-accent-dark shadow-soft">
-        <Icon size={24} aria-hidden="true" />
-      </span>
-      <p className="text-sm font-medium text-ink2">{label}</p>
-    </div>
-  );
-}
 
 export default function PropertyGallery() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -47,7 +20,7 @@ export default function PropertyGallery() {
     <section id="galeri" className="py-20 sm:py-28">
       <div className="mx-auto max-w-content px-5 sm:px-8">
         <Reveal>
-          <p className="eyebrow">Galeri Hunian</p>
+          <p className="eyebrow text-accent">Galeri Hunian</p>
           <h2 className="mt-4 max-w-xl font-serif text-3xl leading-tight text-ink sm:text-4xl">
             Kenali Hunian Anda Sebelum Berkunjung
           </h2>
@@ -58,10 +31,22 @@ export default function PropertyGallery() {
             <button
               type="button"
               onClick={() => setLightboxOpen(true)}
-              className="group relative aspect-[4/3] overflow-hidden rounded-xl2 border border-border shadow-card transition-shadow duration-300 hover:shadow-lift sm:aspect-[16/10]"
+              className="group relative aspect-[4/3] overflow-hidden rounded-xl2 border border-border bg-sand shadow-card transition-shadow duration-300 hover:shadow-lift sm:aspect-[16/10]"
               aria-label={`Perbesar foto: ${active.label}`}
             >
-              <PlaceholderVisual id={active.id} label={active.label} />
+              <Image
+                src={active.src}
+                alt={active.label}
+                fill
+                unoptimized
+                sizes="(min-width: 1024px) 60vw, 100vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                priority
+              />
+              <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/25 via-transparent to-transparent" />
+              <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium text-ink2 shadow-soft">
+                {active.label}
+              </span>
               <span className="absolute bottom-4 right-4 rounded-full bg-white/90 px-3 py-1.5 text-xs font-medium text-ink2 opacity-0 shadow-soft transition-opacity duration-300 group-hover:opacity-100">
                 Klik untuk memperbesar
               </span>
@@ -73,7 +58,7 @@ export default function PropertyGallery() {
                   key={item.id}
                   type="button"
                   onClick={() => setActiveIndex(i)}
-                  className={`relative aspect-square overflow-hidden rounded-xl border transition-all duration-300 ${
+                  className={`relative aspect-square overflow-hidden rounded-xl border bg-sand transition-all duration-300 ${
                     i === activeIndex
                       ? "border-accent shadow-soft ring-1 ring-accent/40"
                       : "border-border hover:-translate-y-0.5 hover:shadow-soft"
@@ -81,7 +66,14 @@ export default function PropertyGallery() {
                   aria-label={`Lihat foto ${item.label}`}
                   aria-pressed={i === activeIndex}
                 >
-                  <PlaceholderVisual id={item.id} label={item.label} />
+                  <Image
+                    src={item.src}
+                    alt={item.label}
+                    fill
+                    unoptimized
+                    sizes="180px"
+                    className="object-cover"
+                  />
                 </button>
               ))}
             </div>
@@ -105,8 +97,15 @@ export default function PropertyGallery() {
             className="relative w-full max-w-2xl overflow-hidden rounded-xl2 border border-border bg-ivory shadow-lift"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="aspect-[4/3] w-full sm:aspect-[16/10]">
-              <PlaceholderVisual id={active.id} label={active.label} />
+            <div className="relative aspect-[4/3] w-full bg-sand sm:aspect-[16/10]">
+              <Image
+                src={active.src}
+                alt={active.label}
+                fill
+                unoptimized
+                sizes="640px"
+                className="object-cover"
+              />
             </div>
 
             <button
